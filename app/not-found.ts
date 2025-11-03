@@ -1,0 +1,1 @@
+export { metadata, NotFoundPage as default } from "@/src/pages/NotFoundPage";
