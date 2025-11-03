@@ -3,20 +3,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import axios from "axios";
 
-import type { IProductResponse } from "@/src/entities/Product/types/product";
 import { ProductDetails } from "@/src/widgets/ProductDetails";
-
-export const generateStaticParams = async () => {
-  const { data } = await axios.get<IProductResponse>(
-    "https://dummyjson.com/products"
-  );
-
-  const paths = data.products.map((product) => ({
-    params: { id: product.id },
-  }));
-
-  return paths;
-};
 
 const getProducts = async (id: string) => {
   try {

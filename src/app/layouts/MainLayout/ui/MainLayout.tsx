@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   description: "Test assignment from Alfa-Bank",
 };
 
-const RootLayout = ({
+const MainLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -31,6 +31,7 @@ const RootLayout = ({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning={true}
       >
         <NextTopLoader showSpinner={false} />
         <Toaster />
@@ -41,4 +42,4 @@ const RootLayout = ({
   );
 };
 
-export default RootLayout;
+export default MainLayout;
