@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Alfa-Bank Test Task",
-  description: "Test assignment from Alfa-Bank",
+  description: "Test assignment from Alfa",
 };
 
 const MainLayout = ({
